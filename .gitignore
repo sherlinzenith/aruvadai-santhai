@@ -1,3 +1,16 @@
-node_modules
-.next
+node_modules/
+.next/
 next-env.d.ts
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.env.local
+
+# Build outputs
+dist/
+build/
+
+# Debug logs
+npm-debug.log*

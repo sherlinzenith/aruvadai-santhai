@@ -6,13 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@hookform/resolvers": "^6.0.2",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.118.0",
+    "drizzle-orm": "^0.45.4",
     "next": "14.2.18",
+    "postgres": "^4.0.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-hook-form": "^7.91.0",
@@ -22,6 +28,9 @@
     "@types/node": "20.14.10",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
-    "typescript": "5.5.3"
+    "dotenv": "^18.0.9",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "5.5.3",
+    "prisma": "8.0.0-rc.29"
   }
 }
