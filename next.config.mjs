@@ -1,3 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { reactStrictMode: true };
+const nextConfig = {
+  reactStrictMode: false,
+  experimental: {
+    serverComponentsExternalPackages: ["postgres", "bcryptjs"],
+  },
+};
+
 export default nextConfig;
